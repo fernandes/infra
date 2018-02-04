@@ -13,7 +13,7 @@
 
 Vagrant.configure("2") do |config|
   config.vm.define 'master' do |node|
-    node.vm.box = "debian-8.5-amd64"
+    node.vm.box = "debian-9.3-amd64"
     node.vm.network :private_network, ip: "10.0.0.10" # type: 'dhcp' if you don't care for static IP
     node.vm.hostname = 'master.box'
 
